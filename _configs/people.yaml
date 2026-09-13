@@ -1,0 +1,27 @@
+# People page. One entry per member; groups render in this order.
+# image: file in assets/img/   links: leave out any you don't have.
+groups:
+  - name: Principal Investigator
+    members:
+      - name: Bahador Bahmani
+        title: Professor
+        image: prof_pic.jpg
+        email: bahador.bahmani@northwestern.edu
+        scholar: https://scholar.google.com/citations?user=2irckGAAAAAJ
+  - name: Members
+    members:
+      - name: Sida Hao
+        title: Postdoctoral Researcher
+        image: prof_pic.jpg
+      - name: Jinkyo Han
+        title: PhD student
+        image: prof_pic.jpg
+      - name: Antoine Moats
+        title: PhD student
+        image: prof_pic.jpg
+  - name: Alumni
+    members:
+      - name: Former Member
+        title: MS 2024, now at Company
+        image: prof_pic.jpg
+        website: https://example.com

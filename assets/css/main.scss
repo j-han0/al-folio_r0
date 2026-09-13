@@ -61,3 +61,46 @@ h1, h2, h3, h4, h5, h6,
 button, input, select, textarea {
   font-family: {{ f.headings }};
 }
+
+/* ---- people page: _configs/people.yaml ---- */
+.people-group {
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem 1rem;
+}
+.person {
+  text-align: center;
+}
+.person-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+.person-name {
+  font-weight: 700;
+}
+.person-title {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+.person-links a {
+  margin: 0 0.3rem;
+  color: var(--global-text-color-light);
+}
+.person-links a:hover {
+  color: var(--global-theme-color);
+}
+
+/* ---- navbar brand: full bold ---- */
+.navbar-brand.title,
+.navbar-brand.title span {
+  font-weight: 700;
+}
