@@ -16,6 +16,11 @@ output/playwright/
 test-results/
 vendor
 
+*tmp
+tmp*
+
+
+
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
