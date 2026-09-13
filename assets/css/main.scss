@@ -1,0 +1,63 @@
+---
+# Local override of al_folio_core's assets/css/main.scss.
+# Same partial chain as the gem, plus site tokens read from _configs/colors.yaml
+# and _configs/typography.yaml (Liquid runs before Sass).
+---
+@charset "utf-8";
+@use "sass:math";
+@use "sass:string";
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+{% assign c = site.data.colors.light %}
+{% assign d = site.data.colors.dark %}
+{% assign f = site.data.typography %}
+
+/* ---- site tokens: _configs/colors.yaml ---- */
+:root {
+  --global-bg-color: {{ c.background }};
+  --global-card-bg-color: {{ c.card_background }};
+  --global-code-bg-color: {{ c.code_background }};
+  --global-text-color: {{ c.text }};
+  --global-text-color-light: {{ c.text_light }};
+  --global-theme-color: {{ c.theme }};
+  --global-hover-color: {{ c.hover }};
+  --global-hover-text-color: {{ c.hover_text }};
+  --global-divider-color: {{ c.divider }};
+  --global-footer-bg-color: {{ c.footer_background }};
+  --global-footer-text-color: {{ c.footer_text }};
+  --global-footer-link-color: {{ c.footer_link }};
+  --global-newsletter-bg-color: {{ c.card_background }};
+  --global-newsletter-text-color: {{ c.text }};
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: {{ d.theme }};
+  --global-hover-color: {{ d.hover }};
+  --global-hover-text-color: {{ d.hover_text }};
+}
+
+/* ---- site fonts: _configs/typography.yaml ---- */
+body {
+  font-family: {{ f.body }};
+  font-weight: {{ f.body_weight }};
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-brand, .nav-link,
+button, input, select, textarea {
+  font-family: {{ f.headings }};
+}

@@ -1,0 +1,44 @@
+# Northwestern University brand palette
+# Source: https://www.northwestern.edu/brand/visual-identity/color-palettes/
+northwestern:
+  purple: "#4E2A84" # Northwestern Purple, RGB 78 42 132
+  purple_10: "#E4E0EE"
+  purple_20: "#CCC4DF"
+  purple_30: "#B6ACD1"
+  purple_40: "#A495C3"
+  purple_50: "#9380B6"
+  purple_60: "#836EAA"
+  purple_70: "#765DA0"
+  purple_80: "#684C96"
+  purple_90: "#5B3B8C"
+  purple_110: "#482476"
+  purple_120: "#401F68"
+  purple_130: "#38175A"
+  purple_140: "#30104E"
+  purple_150: "#260841"
+  purple_160: "#1D0235"
+  rich_black: "#000000"
+  rich_black_80: "#342F2E"
+  rich_black_50: "#716C6B"
+  rich_black_20: "#BBB8B8"
+  rich_black_10: "#D8D6D6"
+
+# What the site actually uses (edit these; they feed assets/css/main.scss)
+light:
+  background: "#FBF8EE" # slightly warm paper, complement of purple
+  card_background: "#FFFDF7"
+  code_background: "rgba(78, 42, 132, 0.06)"
+  text: "#342F2E" # rich black 80
+  text_light: "#716C6B" # rich black 50
+  theme: "#4E2A84" # Northwestern Purple: links, accents, active nav
+  hover: "#401F68" # purple 120
+  hover_text: "#FFFFFF"
+  divider: "rgba(78, 42, 132, 0.15)"
+  footer_background: "#401F68"
+  footer_text: "#E4E0EE"
+  footer_link: "#FFFFFF"
+
+dark:
+  theme: "#B6ACD1" # purple 30, readable on dark
+  hover: "#CCC4DF" # purple 20
+  hover_text: "#1D0235"

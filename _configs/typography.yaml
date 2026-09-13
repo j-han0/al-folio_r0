@@ -1,0 +1,4 @@
+# Site-wide font stack (feeds assets/css/main.scss)
+body: 'Tahoma, Verdana, "Segoe UI", sans-serif'
+headings: 'Tahoma, Verdana, "Segoe UI", sans-serif'
+body_weight: 400 # Tahoma has no 300 weight; the gem default is 300
