@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://j-han0.github.io/al-folio_r0/sitemap.xml
