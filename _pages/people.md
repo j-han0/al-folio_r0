@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-{% for group in site.data.people.groups %}
+{% for group in site.data.people.groups %}{% if group.members.size > 0 %}
 <h3 class="people-group">{{ group.name }}</h3>
 <div class="people-grid">
 {% for p in group.members %}
@@ -25,4 +25,4 @@ nav_order: 7
   </div>
 {% endfor %}
 </div>
-{% endfor %}
+{% endif %}{% endfor %}

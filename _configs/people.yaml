@@ -20,8 +20,4 @@ groups:
         title: PhD student
         image: prof_pic.jpg
   - name: Alumni
-    members:
-      - name: Former Member
-        title: MS 2024, now at Company
-        image: prof_pic.jpg
-        website: https://example.com
+    members: []
